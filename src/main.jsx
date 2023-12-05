@@ -9,7 +9,7 @@ import PagCompras from './routes/PagCompras.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Airjordan1",
     element:<App />,
     children: [
       {
