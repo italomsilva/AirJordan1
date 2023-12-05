@@ -1,0 +1,293 @@
+@media(min-width:1000px){
+    .contcarrossel{
+        margin-top: 2rem;
+    }
+
+    .detradio1, .detradio2, .detradio3{
+        display: none;
+    }
+    .contslide{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        column-gap: 5%;
+        margin-bottom: 10px;
+        justify-content: center;
+        border: 3px solid #ff8800;
+        padding: 2rem 0;
+        border-radius: 0.5rem;
+    }
+
+    .contslide div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--cor1);
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 500;
+        width: 25vw;
+        height: 70vh;
+        margin-bottom: 1px;
+        box-shadow: 1px 1px 6px #000000b1;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .contslide div:nth-child(1){
+        background: #000000a4 url(../../img/banners/aj-cartaz3.jpg); 
+        background-position: center;
+        transition: 0.6s;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .contslide div:nth-child(1):hover{
+        background: #000000de url(../../img/banners/aj-cartaz3.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .contslide div:nth-child(2){
+        background: #000000ce url(../../img/banners/aj-cartaz2.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        transition: 0.6s;
+    }
+
+    .contslide div:nth-child(2):hover{
+        background: #000000de url(../../img/banners/aj-cartaz2.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+
+    .contslide div:nth-child(3){
+        background: #000000a4 url(../../img/banners/aj-cartaz1.jpg); 
+        background-position: center;
+        box-shadow: 3px 3px 6px #000000b1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        transition: 0.6s;
+    }
+
+    .contslide div:nth-child(3):hover{
+        background: #000000de url(../../img/banners/aj-cartaz1.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+
+    .cardslide h4{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .cardslide p{
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+}
+
+/* TABLET */
+
+@media(min-width:571px) and (max-width:1000px){
+
+    .contcarrossel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-x: hidden;
+        margin-top: 2rem;
+    }
+    .detradio1, .detradio2, .detradio3{
+        display: none;
+    }
+
+    .contslide{
+        display: flex;
+        width: 400vw;
+        column-gap: 1px;
+        margin-bottom: 10px;
+        min-height: 100%;
+    }
+
+    .contslide div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: var(--cor1);
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 500;
+        width: 100vw;
+        min-height: 70vh;
+        margin-bottom: 1px;
+        box-shadow: 1px 1px 6px #000000b1;
+    }
+
+    .contslide div:nth-child(1){
+        background: #000000a4 url(../../img/banners/aj-cartaz3.jpg); 
+        background-position: center;
+        transition: 1s;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .contslide div:nth-child(2){
+        background: #000000a4 url(../../img/banners/aj-cartaz2.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .contslide div:nth-child(3){
+        background: #000000a4 url(../../img/banners/aj-cartaz1.jpg); 
+        background-position: center;
+        box-shadow: 3px 3px 6px #000000b1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .cardslide h4{
+        font-size: 4rem;
+        color: #fff;
+    }
+
+    .cardslide p{
+        font-size: 2rem;
+        color: #fff;
+        width: 90%;
+
+    }
+
+    .detradio1:checked ~ .contslide div:nth-child(1){
+        margin-left: 0;
+    }
+    .detradio2:checked ~ .contslide div:nth-child(1){
+        margin-left: -200vw;
+    }
+    .detradio3:checked ~ .contslide div:nth-child(1){
+        margin-left: -100vw;
+    }
+    .detradio1:checked ~.detlab1{
+        background-color: #8080808b;
+    }
+    .detradio2:checked ~ .detlab3{
+        background-color: #8080808b;
+    }
+    .detradio3:checked ~ .detlab2{
+        background-color: #8080808b;
+    }
+}
+
+@media(max-width:571px){
+
+    .contcarrossel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-x: hidden;
+        margin-top: 2rem;
+    }
+    .detradio1, .detradio2, .detradio3{
+        display: none;
+    }
+
+    .contslide{
+        display: flex;
+        width: 400vw;
+        margin-bottom: 10px;
+        min-height: 100%;
+    }
+
+    .contslide div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: var(--cor1);
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 500;
+        width: 100vw;
+        min-height: 70vh;
+        margin-bottom: 1px;
+        box-shadow: 1px 1px 6px #000000b1;
+    }
+
+    .contslide div:nth-child(1){
+        background: #000000a4 url(../../img/banners/aj-cartaz3.jpg); 
+        background-position: center;
+        transition: 1s;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .contslide div:nth-child(2){
+        background: #000000a4 url(../../img/banners/aj-cartaz2.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .contslide div:nth-child(3){
+        background: #000000a4 url(../../img/banners/aj-cartaz1.jpg); 
+        background-position: center;
+        box-shadow: 3px 3px 6px #000000b1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .cardslide h4{
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .cardslide p{
+        font-size: 1rem;
+        color: #fff;
+        width: 90%;
+
+    }
+
+    .detradio1:checked ~ .contslide div:nth-child(1){
+        margin-left: 0;
+    }
+    .detradio2:checked ~ .contslide div:nth-child(1){
+        margin-left: -200vw;
+    }
+    .detradio3:checked ~ .contslide div:nth-child(1){
+        margin-left: -100vw;
+    }
+    .detradio1:checked ~.detlab1{
+        background-color: #8080808b;
+    }
+    .detradio2:checked ~ .detlab3{
+        background-color: #8080808b;
+    }
+    .detradio3:checked ~ .detlab2{
+        background-color: #8080808b;
+    }
+}

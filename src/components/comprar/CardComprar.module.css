@@ -1,0 +1,46 @@
+.card_comprar{
+    margin-top: 3rem;
+    background-color: #bbb;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.card_comprar div:nth-child(1){
+    display: flex;
+    column-gap: 1rem;
+    color: #111;
+}
+
+.card_comprar img{
+    width: 8vw;
+    background-color: #999;
+    border-radius: 0.5rem;
+}
+
+.preco span{
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.preco strong{
+    font-weight: bold;
+    color: #ff8800;
+}
+
+.comprar_btn{
+    background-color: #111;
+    padding: 0.5rem 2rem;
+    color: #ff8800;
+    letter-spacing: 0px;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
+.comprar_btn:hover{
+    margin-right: 0;
+    letter-spacing: 2px;
+}

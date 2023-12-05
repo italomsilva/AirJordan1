@@ -1,0 +1,12 @@
+.paragrafs{
+    text-indent: 3rem;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+@media(max-width:570px){
+    .paragrafs{
+        font-size:5vw;
+        padding: 0 0.5rem;
+    }
+}

@@ -1,0 +1,93 @@
+.home{
+    width: 100vw;
+    max-width: 100%;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(#00000000 90%, #1e1e1e 100%);
+}
+.bg_home{
+    position: absolute;
+    height: 120vh;
+    width: 110%;
+    z-index: -1;
+    background: url(../img/banners/basknight.avif) #000000c1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.home_box1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.home_box1 h1{
+    text-align: center;
+    font-size: 40vh;
+    text-transform: uppercase;
+    -webkit-text-fill-color: #00000000;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    padding-left: 1rem;
+}
+
+.home_box1 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1px;
+}
+
+
+.home_box1 img{
+    width: 15vw;
+    position: relative;
+    top: -20vh;
+}
+.home_box2{
+    min-height: 40vh;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.home_box2 h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.home_box2 span{
+    text-decoration: line-through;
+    color: #ffffff8e;
+}
+
+.home_box2 strong{
+    text-decoration: none;
+    color: #ff8800;
+    font-size: 1.3rem;
+}
+
+.home_box2 a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ff8800;
+    color: #1e1e1e;
+    padding: 0.2rem 2rem;
+    border: 3px solid #ff8800;
+    border-radius: 0.2rem;
+    transition: 0.5s;
+}
+
+.home_box2 a:hover{
+    background-color: transparent;
+    color: #ff8800;
+}
