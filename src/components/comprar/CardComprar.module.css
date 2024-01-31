@@ -8,13 +8,17 @@
     padding: 0.5rem 1rem;
 }
 
-.card_comprar div:nth-child(1){
+.cardcomprar_txt{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
     column-gap: 1rem;
     color: #111;
+    width: 100%;
 }
 
-.card_comprar img{
+.cardcomprar_img img{
     width: 8vw;
     background-color: #999;
     border-radius: 0.5rem;
@@ -43,4 +47,20 @@
 .comprar_btn:hover{
     margin-right: 0;
     letter-spacing: 2px;
+}
+
+@media(max-width: 720px){
+    .cardcomprar_txt{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        align-items: start;
+        padding-bottom: 0.5rem;
+    }
+    .cardcomprar_txt div:nth-child(1){
+       color: #111;
+    }
+    .cardcomprar_img img{
+        min-width: 25vw;
+    }
 }

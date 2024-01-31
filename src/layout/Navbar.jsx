@@ -19,16 +19,16 @@ function Navbar() {
                 </div>
                 <menu className={styles.menulist}>
                     <li>
-                        <Link reloadDocument to="/#home">Home</Link>
+                        <Link reloadDocument to="/AirJordan1">Home</Link>
                     </li>
                     <li>
-                        <a href="#detalhes">Detalhes</a>
+                        <a href="https://italomsilva.github.io/AirJordan1/#detalhes">Detalhes</a>
                     </li>
                     <li>
-                        <a href="#comprar">Comprar</a>
+                        <a href="https://italomsilva.github.io/AirJordan1/#comprar">Comprar</a>
                     </li>
                     <li>
-                        <a href="#relacionados">Relacionados</a>
+                        <a href="https://italomsilva.github.io/AirJordan1/#relacionados">Relacionados</a>
                     </li>
                     <li>
                         <Link to="contact">Contato</Link>

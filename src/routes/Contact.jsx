@@ -2,7 +2,7 @@
 function Contact() {
 
     return (
-        <h1>Contato</h1>
+        <h1 style={{fontSize: '15rem', color: 'green'}}>Contato</h1>
     )
 }
 

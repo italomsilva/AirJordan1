@@ -1,5 +1,4 @@
 import styles from './Home.module.css'
-import jclassic from '../img/tenis/aj-classic.png'
 
 
 function Home(){
@@ -9,7 +8,7 @@ function Home(){
             <div className={styles.home_box1}>
                 <h1>Nike</h1>
                 <div>
-                    <img src={jclassic} alt="" />
+                    <img src="https://i.imgur.com/JKwr4rC.png" alt="" />
                 </div>
             </div>
             <div className={styles.home_box2}>

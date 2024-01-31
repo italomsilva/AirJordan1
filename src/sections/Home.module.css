@@ -91,3 +91,14 @@
     background-color: transparent;
     color: #ff8800;
 }
+
+@media(max-width: 720px){
+    .home_box1 h1{
+        font-size: 50vw;
+        padding-left: 0;
+    }
+    .home_box1 img{
+        width: 40vw;
+        top: -15vh;
+    }
+}

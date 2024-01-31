@@ -8,62 +8,62 @@ import CardComprar from './CardComprar';
 function SectionComprar(){
     const tenis = [
         {
-            url: 'src/img/tenis/aj-classic.png',
+            url: 'https://i.imgur.com/JKwr4rC.png',
             cor: '#ff0000',
             text: 'Classic',
         },
         {
-            url: 'src/img/tenis/aj-laranja.png',
+            url: 'https://i.imgur.com/YRWHlJv.png',
             cor: '#ff3c00',
             text: 'Orange',
         },
         {
-            url: 'src/img/tenis/aj-marrom.png',
+            url: 'https://i.imgur.com/vEQtIlq.png',
             cor: '#592800',
             text: 'Brown',
         },
         {
-            url: 'src/img/tenis/aj-pretobranco.png',
+            url: 'https://i.imgur.com/ioqbINi.png',
             cor: '#000000',
             text: 'BlackWhite',
         },
         {
-            url: 'src/img/tenis/aj-rosa.png',
+            url: 'https://i.imgur.com/PjSaIh7.png',
             cor: '#f8a7f2',
             text: 'WhitePink',
         },
         {
-            url: 'src/img/tenis/aj-rosapret.png',
+            url: 'https://i.imgur.com/xbLZ4JR.png',
             cor: '#ff009d',
             text: 'BlackPink',
         },
         {
-            url: 'src/img/tenis/aj-rosepret.png',
+            url: 'https://i.imgur.com/nCxMFB2.png',
             cor: '#ffcad1',
             text: 'Rosé',
         },
         {
-            url: 'src/img/tenis/aj-roxo.png',
+            url: 'https://i.imgur.com/6GVifei.png',
             cor: '#2e005f',
             text: 'Purple',
         },
         {
-            url: 'src/img/tenis/aj-verde.png',
+            url: 'https://i.imgur.com/BjeszG6.png',
             cor: '#06542a',
             text: 'DarkGreen',
         },
         {
-            url: 'src/img/tenis/aj-verdelim.png',
+            url: 'https://i.imgur.com/WBTmZju.png',
             cor: '#b7ff00',
             text: 'LightGreen',
         },
         {
-            url: 'src/img/tenis/aj-vermazul.png',
+            url: 'https://i.imgur.com/dQxc3s2.png',
             cor: '#00a6ff',
             text: 'RedBlue',
         },
         {
-            url: 'src/img/tenis/aj-vermpreto.png',
+            url: 'https://i.imgur.com/L4CERYN.png',
             cor: '#900000',
             text: 'BlackRed',
         },
@@ -208,44 +208,46 @@ function SectionComprar(){
         <div className={s.tam_conteinergeral}>
             <h3 className={classNames(tit.subtit, tit.pequeno)} style={{paddingLeft: '1rem'}}>Escolha o tamanho</h3>
             <div className={s.tam_cardsconteiner}>
-                <div className={s.tamcard}>
-                    <h3>Masculino</h3>
-                    <ul>
-                        {tamMas.map((el, i)=>{
-                            return(
-                                <li>
-                                     <input type="radio"
-                                        key={i}
-                                        id={el.tipo+el.text}
-                                        name='radiotam'
-                                        value={el.valor}
-                                        onChange={()=>{setTamSelec(el.text); setTamCM(el.valor); setTipoTam(el.tipo)}}
-                                    />
-                                    <label htmlFor={el.tipo+el.text}>{el.text}</label>
-                                </li>
-                            )
-                        })
-                        }
-                    </ul>
-                </div>
-                <div className={s.tamcard}>
-                    <h3>Feminino</h3>
-                    <ul>
-                        {tamFem.map((el, i)=>{
-                            return(
-                                <li>
-                                    <input type="radio"
-                                        key={i}
-                                        id={el.tipo+el.text}
-                                        name='radiotam'
-                                        value={el.valor}
-                                        onChange={()=>{setTamSelec(el.text); setTamCM(el.valor); setTipoTam(el.tipo)}}
-                                    />
-                                    <label htmlFor={el.tipo+el.text}>{el.text}</label>
-                                </li>
-                            )
-                        })}
-                    </ul>
+                <div className={s.tam_cards}>
+                    <div className={s.tamcard}>
+                        <h3>Masculino</h3>
+                        <ul>
+                            {tamMas.map((el, i)=>{
+                                return(
+                                    <li>
+                                         <input type="radio"
+                                            key={i}
+                                            id={el.tipo+el.text}
+                                            name='radiotam'
+                                            value={el.valor}
+                                            onChange={()=>{setTamSelec(el.text); setTamCM(el.valor); setTipoTam(el.tipo)}}
+                                        />
+                                        <label htmlFor={el.tipo+el.text}>{el.text}</label>
+                                    </li>
+                                )
+                            })
+                            }
+                        </ul>
+                    </div>
+                    <div className={s.tamcard}>
+                        <h3>Feminino</h3>
+                        <ul>
+                            {tamFem.map((el, i)=>{
+                                return(
+                                    <li>
+                                        <input type="radio"
+                                            key={i}
+                                            id={el.tipo+el.text}
+                                            name='radiotam'
+                                            value={el.valor}
+                                            onChange={()=>{setTamSelec(el.text); setTamCM(el.valor); setTipoTam(el.tipo)}}
+                                        />
+                                        <label htmlFor={el.tipo+el.text}>{el.text}</label>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
                 <article className={s.tam_article}>
                     <div>
