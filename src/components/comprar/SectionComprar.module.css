@@ -9,7 +9,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    height: 80vh;
+    height: max-content;
 }
 
 .colorlist_ul{
@@ -56,6 +56,7 @@
     justify-content: center;
     overflow-x: hidden;
     padding-right: 2rem;
+    padding-top: 2rem;
 }
 
 .colorimg_cont div{
@@ -186,6 +187,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 1.5rem;
     }
     
     .colorlist_ul{
@@ -207,18 +209,24 @@
     
     .colorimg_cont{
         flex-direction: column;
-        height: 40vh;
+        height: max-content;
         align-items: center;
         justify-content: center;
+        padding: 0rem;
+        overflow: visible;
+        margin-bottom: 1rem;
+
     }
     
     .colorimg_cont div{
         width: 40vw;
-        height: 40vw;
+        height:auto;
     }
     .colorimg_cont img{
         width: 50vw;
         transform: rotate(0deg);
+        top: 1rem;
+
     }
     
     .colorimg_cont img:hover{
@@ -252,7 +260,7 @@
         flex-direction: column;
         justify-content: center;
         width: 45vw;
-        height: 40vh;
+        height: 100%;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
     }

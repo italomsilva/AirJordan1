@@ -1,0 +1,46 @@
+.section_relacionados h1{
+    padding-left: 1rem;
+}
+
+.slide{
+    margin-top: 2rem;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ff8800;
+    border-radius: 1rem;
+    min-width: 30vw;
+    padding: 0.5rem;
+    min-height: 20vh;
+}
+
+.divimg{
+    background-color: lightgray;
+    border-radius: 0.5rem;
+}
+
+.divimg img{
+    width: 100%;
+}
+
+.divtexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.divtexto h2{
+    font-size: 1.3rem;
+    text-overflow: clip;
+}
+
+.divtexto div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

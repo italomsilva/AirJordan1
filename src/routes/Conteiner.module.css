@@ -1,8 +1,8 @@
 .conteiner{
-    min-height: 100vh;
+    height: auto;
     width: 100%;
     overflow-x: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .detcom_cp{
