@@ -5,52 +5,52 @@ import tit from '../components/Titulos.module.css'
 
 const relacionados = [
     {
-        imagem: "src/img/relacionados/nikedunk.png",
-        texto: "Nike dunk purple",
+        imagem: "https://i.imgur.com/0BmhjaZ.png",
+        texto: "Nike SB Force 58 Purple Edition",
         preco: "99,99",
         avaliacao: "3.8",
     },
     {
-        imagem: "src/img/relacionados/aifrocelv8.png",
+        imagem: "https://i.imgur.com/2RLhVC2.png",
         texto: "Nike Air Force Lv8",
         preco: "149,90",
         avaliacao: "4.5",
     },
     {
-        imagem: "src/img/relacionados/airjordan4.png",
+        imagem: "https://i.imgur.com/GYB5sEb.png",
         texto: "Nike Air Jordan 4 BlackWhite",
         preco: "399,90",
         avaliacao: "5.0",
     },
     {
-        imagem: "src/img/relacionados/airmax.png",
-        texto: "Nike Air Max",
+        imagem: "https://i.imgur.com/02bqzon.png",
+        texto: "Nike Air Max Alpha Trainer 5",
         preco: "119,90",
         avaliacao: "3.5",
     },
     {
-        imagem: "src/img/relacionados/outroai.png",
-        texto: "Nike Dunk High",
+        imagem: "https://i.imgur.com/ufU5rJY.png",
+        texto: "Nike Air Force 2 76ers Edition",
         preco: "129,90",
         avaliacao: "3.0",
     },
     {
-        imagem: "src/img/relacionados/airjordan4_red.png",
-        texto: "Air Jordan 4 WhiteRed",
+        imagem: "https://i.imgur.com/1ze2Pwe.png",
+        texto: "Nike Air Jordan 4 WhiteRed",
         preco: "399,90",
         avaliacao: "5.0",
     },
     {
-        imagem: "src/img/relacionados/outronikedunk.png",
-        texto: "Nike Dunk BlueSky",
+        imagem: "https://i.imgur.com/po7HeOl.png",
+        texto: "Nike SB Dunk Low Club 58",
         preco: "99,90",
         avaliacao: "4.0",
     },
     {
-        imagem: "src/img/relacionados/nikedunk.png",
-        texto: "",
-        preco: "",
-        avaliacao: "",
+        imagem: "https://i.imgur.com/MlVKULS.png",
+        texto: "Nike Dunk High Retro SE",
+        preco: "129,90",
+        avaliacao: "3.3",
     },
 ]
 
@@ -67,12 +67,17 @@ function Relacionados(){
                     {
                         relacionados.map((el)=>{ return(
                             <div className={s.card}>
-                                <div className={s.divimg}><img src={el.imagem}/></div>
+                                <div className={s.divimg}>
+                                    <img src={el.imagem}/>
+                                </div>
                                 <div className={s.divtexto}>
                                     <h2>{el.texto}</h2>
                                     <div>
-                                    <span>R$ {el.preco}</span>
-                                    <span>{el.avaliacao}</span>
+                                        <p>
+                                            <strong>R${el.preco}</strong>
+                                            <span>{el.avaliacao}</span>
+                                        </p>
+                                        <a href="">Comprar</a>
                                     </div>
                                 </div>
                             </div>

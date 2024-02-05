@@ -1,6 +1,6 @@
 .card_comprar{
     margin-top: 3rem;
-    background-color: #bbb;
+    background-color: #d3d3d3;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 
 .cardcomprar_img img{
     width: 8vw;
-    background-color: #999;
+    background-color: #bababa;
     border-radius: 0.5rem;
 }
 
@@ -36,12 +36,15 @@
 }
 
 .comprar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
     background-color: #111;
-    padding: 0.5rem 2rem;
     color: #ff8800;
     letter-spacing: 0px;
-    margin-right: 6px;
     transition: 0.3s;
+    width: 7rem;
 }
 
 .comprar_btn:hover{
