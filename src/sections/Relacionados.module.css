@@ -1,5 +1,6 @@
 .section_relacionados h1{
     padding-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .slide{
@@ -71,4 +72,18 @@
 .divtexto a:hover{
     background-color: #111;
     letter-spacing: 3px;
+}
+
+@media(min-width:720px){
+    .slide{
+        display: grid;
+        grid-template-columns: repeat(4, 22vw);
+        width: max-content;
+        margin: auto;
+    }
+
+    .card{
+        min-width: 20vw;
+        max-width: 24vw;
+    }
 }
