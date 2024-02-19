@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom"
 import Conteiner from './routes/Conteiner.jsx'
 import Contact from './routes/Contact.jsx'
 import PagCompras from './routes/PagCompras.jsx'
+import { TenisProvider } from './context/tenisContext.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         element: <Contact/>
       },
       {
-        path: "comprar:aj1",
+        path: "comprar",
         element: <PagCompras/>,
       },    
     ],
@@ -30,6 +31,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />,
+    <TenisProvider>
+      <RouterProvider router={router} />
+    </TenisProvider>
   </React.StrictMode>,
 )

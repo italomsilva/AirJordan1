@@ -1,6 +1,7 @@
 import s from './CardComprar.module.css'
+import { Link } from 'react-router-dom'
 
-function CardComprar({ imagem, modelo, tamanho, tipotam }){
+function CardComprar({ imagem, modelo, tamanho, tipotam}){
     return(
         <aside className={s.card_comprar}>
         <div className={s.cardcomprar_img}>
@@ -14,7 +15,7 @@ function CardComprar({ imagem, modelo, tamanho, tipotam }){
                 <p className={s.preco}><span>R$ 150,00</span> <strong>R$ 119,90</strong></p>
             </div>
             <div>
-                <a href="/comprar:aj1" className={s.comprar_btn}>Comprar</a>
+                <Link to="comprar" className={s.comprar_btn}>Comprar</Link>
             </div>
         </div>
         </aside>
