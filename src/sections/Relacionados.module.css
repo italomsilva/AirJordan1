@@ -15,7 +15,7 @@
     flex-direction: column;
     border: 2px solid #ff8800;
     border-radius: 1rem;
-    min-width: 30vw;
+    min-width: 40vw;
     padding: 0.5rem;
     min-height: 20vh;
 }
@@ -57,6 +57,10 @@
 
 .divtexto p strong{
     color: #ff8800;
+}
+
+.divtexto .star_icon{
+    color: #e5ff00;
 }
 
 .divtexto a{

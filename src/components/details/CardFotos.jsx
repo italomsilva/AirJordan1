@@ -11,7 +11,7 @@ function CardFotos(){
     useEffect(()=>{
         const interv = setInterval(()=>{
             setRadioOn((i)=>(i+1) % slides.length)
-        }, 3000);
+        }, 5000);
         return ()=>{
             clearInterval(interv)
         }

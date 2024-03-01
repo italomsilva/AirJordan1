@@ -14,7 +14,7 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
 
   var verifCard=()=>{
     if(tamSelec=='Não selecionado'){
-            window.alert('Selecione a cor e o modelo desejado')
+            window.alert('Selecione a cor e o tamanho desejado!')
     } else{
         location.replace("/AirJordan1/comprar:aj1");
     }
