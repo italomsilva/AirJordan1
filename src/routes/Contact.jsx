@@ -1,9 +1,12 @@
-
+import s from './Contact.module.css'
 function Contact() {
 
     return (
-        <h1 style={{fontSize: '15rem', color: 'green'}}>Contato</h1>
+        <section className={s.sectioncomprar}>
+            <h1>Contato</h1>
+        </section>
     )
+
 }
 
 export default Contact

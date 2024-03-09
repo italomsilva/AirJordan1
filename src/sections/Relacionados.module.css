@@ -60,7 +60,7 @@
 }
 
 .divtexto .star_icon{
-    color: #e5ff00;
+    color: #ffcb0c;
 }
 
 .divtexto a{
@@ -80,6 +80,164 @@
     letter-spacing: 3px;
 }
 
+.cloudbuy{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.cloudbuy.ativado{
+    display: flex;
+}
+
+.cardbuy{
+    background-color: #fff;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+}
+
+.cardbuy .div_icon{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 50px;
+    gap: 0;
+    padding-left: 0.5rem;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.cardbuy .div_icon span{
+    display: flex;
+    content: "";
+    width: 25px;
+    height: 5px;
+    background-color: #ff8800;
+    position: fixed;
+}
+
+.cardbuy .div_icon span:nth-child(1){
+    transform: rotate(45deg);
+}
+.cardbuy .div_icon span:nth-child(2){
+    transform: rotate(-45deg);
+}
+
+.cardbuy .div_img img{
+    width: 25vh;
+    background-color: #d3d3d379;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.cardbuy .div_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardbuy .div_tit h3{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-left: 0.5rem;
+}
+
+.cardbuy .div_tit h3::after{
+    content: "";
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: #ff8800;
+}
+
+.cardbuy .div_ul ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+
+.cardbuy .div_ul ul li{
+    padding: 5px;
+    border: 1px solid #ff8800;
+    background-color: #ff88003a;
+    color: #111;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+.cardbuy .div_ul ul li:hover{
+    border: 2px solid #ff8800;
+    background-color: #ff880089;
+
+}
+
+
+.cardbuy .div_ul ul .tamselecionado{
+    border: 2px solid #ff8800;
+    background-color: #ff880089;
+}
+
+.cardbuy .div_txt{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.cardbuy .div_txt .span_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    width: 20%;
+}
+.cardbuy .div_txt .span_btn button{
+    background-color: #ff8800;
+    border: 3px solid #ff8800;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 0.4rem 0.3rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+
+.cardbuy .div_txt .span_btn button:hover{
+    background-color: #ff880089;
+    color: #995200;
+}
+
+.cardbuy .div_txt .span_txt{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+} 
+
+.cardbuy .div_txt .span_txt strong{
+    color: #ff8800;
+}
+
+.cardbuy .div_txt .span_txt span i{
+    color: #ffcb0c;
+}
+
+
 @media(min-width:720px){
     .slide{
         display: grid;
@@ -91,5 +249,16 @@
     .card{
         min-width: 20vw;
         max-width: 24vw;
+    }
+
+    .cardbuy{
+        max-width: 40vw;
+    }
+
+    .cardbuy .div_tit h3{
+        text-align: center;
+    }
+    .cardbuy .div_tit h3:after{
+        margin: auto;
     }
 }

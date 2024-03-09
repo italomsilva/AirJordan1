@@ -18,23 +18,30 @@ function CardFotos(){
     }, [])
 
     return(
-            <div className={styles.contcarrossel}>
-                <input className={styles.detradio1} type="radio" name="detslide" id="radio1" checked={radioOn==0} onChange={()=>setRadioOn(0)}/>
-                <input className={styles.detradio3} type="radio" name="detslide" id="radio2" checked={radioOn==1} onChange={()=>setRadioOn(1)}/>
-                <input className={styles.detradio2} type="radio" name="detslide" id="radio3" checked={radioOn==2} onChange={()=>setRadioOn(2)}/>
-                <div className={styles.contslide}>
-                    <div className={styles.cardslide}>
-                        <h4>Conforto</h4>
-                        <p>Design desenvolvido e pensado para ser super confortável, possuindo aberturas para entrada de ar para manter seus pés saudáveis. Podendo ser usado por horas sem sentir incômodo algum.</p>
+            <div className={styles.conteinerdetails}>
+                <div className={styles.contcarrossel}>
+                    <input className={styles.detradio1} type="radio" name="detslide" id="radio1" checked={radioOn==0} onChange={()=>setRadioOn(0)}/>
+                    <input className={styles.detradio3} type="radio" name="detslide" id="radio2" checked={radioOn==1} onChange={()=>setRadioOn(1)}/>
+                    <input className={styles.detradio2} type="radio" name="detslide" id="radio3" checked={radioOn==2} onChange={()=>setRadioOn(2)}/>
+                    <div className={styles.contslide}>
+                        <div className={styles.cardslide}>
+                            <h4>Conforto</h4>
+                            <p>Design desenvolvido e pensado para ser super confortável, possuindo aberturas para entrada de ar para manter seus pés saudáveis. Podendo ser usado por horas sem sentir incômodo algum.</p>
+                        </div>
+                        <div className={styles.cardslide}>
+                            <h4>Estilo</h4>
+                            <p>Além de mega confortável, o Air Jordan 1 é super estiloso, e mesmo por ter sido desenvolvido na década de 80 seu design está super em alta,e cada vez mais apreciado por quem gosta de se manter no estilo.</p>
+                        </div>
+                        <div className={styles.cardslide}>
+                            <h4>Personalidade</h4>
+                            <p>Por este modelo ser de fácil personalização, é bem simples demonstrar quem voçê é, do que gosta e como se sente, basta ser criativo na hora de usá-lo e modificá-lo, sua criatividade é quem manda! Mostre seu Lifestyle, seu jeito de ser, sua personalidade. Se expresse utilizando seu modo vestir! Se quer um tênis que mostre sua personalidade, esse é o certo para você!</p>
+                        </div>
                     </div>
-                    <div className={styles.cardslide}>
-                        <h4>Estilo</h4>
-                        <p>Além de mega confortável, o Air Jordan 1 é super estiloso, e mesmo por ter sido desenvolvido na década de 80 seu design está super em alta,e cada vez mais apreciado por quem gosta de se manter no estilo.</p>
-                    </div>
-                    <div className={styles.cardslide}>
-                        <h4>Personalidade</h4>
-                        <p>Por este modelo ser de fácil personalização, é bem simples demonstrar quem voçê é, do que gosta e como se sente, basta ser criativo na hora de usá-lo e modificá-lo, sua criatividade é quem manda! Mostre seu Lifestyle, seu jeito de ser, sua personalidade. Se expresse utilizando seu modo vestir! Se quer um tênis que mostre sua personalidade, esse é o certo para você!</p>
-                    </div>
+                </div>
+                <div className={styles.detlabels}>
+                    <label htmlFor="radio1" className={classNames(styles.detlabel, (radioOn==0?[styles.ativado]: null))}></label>
+                    <label htmlFor="radio2" className={classNames(styles.detlabel, (radioOn==1?[styles.ativado]: null))}></label>
+                    <label htmlFor="radio3" className={classNames(styles.detlabel, (radioOn==2?[styles.ativado]: null))}></label>
                 </div>
             </div>
     )
