@@ -1,6 +1,6 @@
 import s from './Relacionados.module.css'
 import tit from '../components/Titulos.module.css'
-import {FaStar, FaWindowClose} from 'react-icons/fa'
+import {FaStar} from 'react-icons/fa'
 import { relacionados } from '../databases/DbRelacionados';
 import classNames from 'classnames';
 import { useState } from 'react';
@@ -43,7 +43,7 @@ function Relacionados(){
                                             <span><span className={s.star_icon}><FaStar/></span>{el.avaliacao}</span>
                                             <strong>R${el.preco}</strong>
                                         </p>
-                                        <a href="">Comprar</a>
+                                        <a onClick={(e)=>{e.stopPropagation()}} href="">Comprar</a>
                                     </div>
                                 </div>
                             </div>

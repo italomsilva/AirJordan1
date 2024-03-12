@@ -27,7 +27,7 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
                 <h3 className={classNames(tit.subtit, tit.pequeno)} style={{paddingLeft: '1rem'}}>Escolha a cor</h3>
                 <ul className={s.colorlist_ul}>
                     {tenis.map((objTenis, index) => (
-                        <li  onClick={() => {setimgSelec(objTenis.url);setcorSelec(objTenis.cor); setTextImg(objTenis.text); setLiSelet(index)}} className={classNames(index==liSelec? s.ativado : null)}>
+                        <li onClick={() => {setimgSelec(objTenis.url);setcorSelec(objTenis.cor); setTextImg(objTenis.text); setLiSelet(index)}} className={classNames(index==liSelec? s.ativado : null)}>
                             <img
                                 key={index}
                                 src={objTenis.url}
