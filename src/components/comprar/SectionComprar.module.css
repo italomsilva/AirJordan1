@@ -32,11 +32,11 @@
 }
 
 .colorlist_ul li:hover{
-    background-color: #0000006f;
+    background-color: #000000ab;
 }
 
 .colorlist_ul .ativado{
-    background-color: #0000005d;
+    background-color: #00000089;
 }
 
 .colorlist_ul li img{

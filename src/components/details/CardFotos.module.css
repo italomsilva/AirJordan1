@@ -281,15 +281,6 @@
     .detradio3:checked ~ .contslide div:nth-child(1){
         margin-left: -100vw;
     }
-    .detradio1:checked ~.detlab1{
-        background-color: #8080808b;
-    }
-    .detradio2:checked ~ .detlab3{
-        background-color: #8080808b;
-    }
-    .detradio3:checked ~ .detlab2{
-        background-color: #8080808b;
-    }
 
     .detlabels{
         display: flex;
@@ -306,10 +297,12 @@
         height: 12px;
         border: 1px solid #ff8800;
         border-radius: 100%;
-        transition: all 0.3s;
+        transition: all 0.7s;
         }
 
     .detlabel.ativado{
-        background-color: #ff8800;
+        width: 30px;
+        border-radius: 1rem;
+        height: 12px;
     }
 }
