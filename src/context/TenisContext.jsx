@@ -12,10 +12,11 @@ export const TenisProvider = ({children}) =>{
     const[tamCM, setTamCM] = useState('X');
     const[tipoTam, setTipoTam]= useState(tamMas[0].tipo);
     const[liSelec, setLiSelet]= useState(0);
+    const [imgsref, setImgsRef]= useState(tenis[0].imgs);
     
     
     return(
-        <TenisContext.Provider value={{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet }}>
+        <TenisContext.Provider value={{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef }}>
             {children}
         </TenisContext.Provider>
     )

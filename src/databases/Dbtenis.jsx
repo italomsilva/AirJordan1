@@ -4,61 +4,73 @@ export const tenis = [
         url: 'https://i.imgur.com/JKwr4rC.png',
         cor: '#ff0000',
         text: 'Classic',
+        imgs: ['https://i.imgur.com/JKwr4rC.png', 'https://i.imgur.com/JKwr4rC.png'],
     },
     {
         url: 'https://i.imgur.com/YRWHlJv.png',
         cor: '#ff3c00',
         text: 'Orange',
+        imgs: ['https://i.imgur.com/YRWHlJv.png', 'https://i.imgur.com/YRWHlJv.png', 'https://i.imgur.com/YRWHlJv.png'],
     },
     {
         url: 'https://i.imgur.com/vEQtIlq.png',
         cor: '#592800',
         text: 'Brown',
+        imgs: ['https://i.imgur.com/vEQtIlq.png', 'https://i.imgur.com/vEQtIlq.png', 'https://i.imgur.com/vEQtIlq.png', 'https://i.imgur.com/vEQtIlq.png'],
     },
     {
         url: 'https://i.imgur.com/ioqbINi.png',
         cor: '#000000',
         text: 'BlackWhite',
+        imgs: ['https://i.imgur.com/ioqbINi.png', 'https://i.imgur.com/ioqbINi.png', 'https://i.imgur.com/ioqbINi.png'],
     },
     {
         url: 'https://i.imgur.com/PjSaIh7.png',
         cor: '#f8a7f2',
         text: 'WhitePink',
+        imgs: ['https://i.imgur.com/PjSaIh7.png', 'https://i.imgur.com/PjSaIh7.png', 'https://i.imgur.com/PjSaIh7.png', 'https://i.imgur.com/PjSaIh7.png'],
     },
     {
         url: 'https://i.imgur.com/xbLZ4JR.png',
         cor: '#ff009d',
         text: 'BlackPink',
+        imgs: ['https://i.imgur.com/xbLZ4JR.png', 'https://i.imgur.com/xbLZ4JR.png'],
     },
     {
         url: 'https://i.imgur.com/nCxMFB2.png',
         cor: '#ffcad1',
         text: 'Rosé',
+        imgs: ['https://i.imgur.com/nCxMFB2.png', 'https://i.imgur.com/nCxMFB2.png', 'https://i.imgur.com/nCxMFB2.png'],
     },
     {
         url: 'https://i.imgur.com/6GVifei.png',
         cor: '#2e005f',
         text: 'Purple',
+        imgs: ['https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png'],
     },
     {
         url: 'https://i.imgur.com/BjeszG6.png',
         cor: '#06542a',
         text: 'DarkGreen',
+        imgs: ['https://i.imgur.com/BjeszG6.png', 'https://i.imgur.com/BjeszG6.png'],
     },
     {
         url: 'https://i.imgur.com/WBTmZju.png',
         cor: '#b7ff00',
         text: 'LightGreen',
+        imgs: ['', '', ''],
     },
     {
         url: 'https://i.imgur.com/dQxc3s2.png',
         cor: '#00a6ff',
         text: 'RedBlue',
+        imgs: ['', '', ''],
     },
     {
         url: 'https://i.imgur.com/L4CERYN.png',
         cor: '#900000',
         text: 'BlackRed',
+        imgs: ['', '', ''],
     },
 ]
 

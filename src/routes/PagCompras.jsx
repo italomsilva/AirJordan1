@@ -4,10 +4,11 @@ import { TenisContext } from '../context/tenisContext';
 import  s from "./PagCompras.module.css"
 import { FaStar, FaAngleLeft } from 'react-icons/fa'
 import classNames from 'classnames';
+import CardComprar from '../components/comprar/CardComprar';
 
 function PagCompras(){
     const [radOn, setRadOn] = useState(1);
-    const{imgSelec, textImg, tamSelec, tipoTam} = useContext(TenisContext);
+    const{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef } = useContext(TenisContext);
     return(
         <section className={s.pagcompras} id='pagCompras'>
             <div className={s.headPagComp}>
@@ -24,22 +25,77 @@ function PagCompras(){
                     <strong>5.0 <FaStar/></strong>
                 </p>
                 <div>
-                    <div style={{marginLeft: (radOn==1? "0": (radOn==2? "-67vw": "-132vw"))}} className={s.divimgs}>
-                        <img src={imgSelec} alt="" />
-                        <img src="src/img/banners/aj-cartaz1.jpg" alt="" />
-                        <img src="src/img/banners/aj-cartaz2.jpg" alt="" />
+                    <div style={{marginLeft: ((radOn-1)*-100)+"vw"}} className={s.divimgs}>
+                        {imgsref.map((e)=>{
+                            return(
+                                <div className={s.divimgsref}>
+                                    <img src={e} alt="" />
+                                </div>
+                            )
+                        })}
                     </div>
                     <div className={s.divinputs}>
-                        <input type="radio" name="rad" id="pgcomprad1" className={s.compradio} onChange={()=>setRadOn(1)} />
-                        <input type="radio" name="rad" id="pgcomprad2" className={s.compradio} onChange={()=>setRadOn(2)}/>
-                        <input type="radio" name="rad" id="pgcomprad3" className={s.compradio} onChange={()=>setRadOn(3)}/>
 
-                        <label htmlFor="pgcomprad1"  className={classNames(s.labelcomp, (radOn==1? s.ativado : null))}></label>
-                        <label htmlFor="pgcomprad2" className={classNames(s.labelcomp, (radOn==2? s.ativado : null))}></label>
-                        <label htmlFor="pgcomprad3" className={classNames(s.labelcomp, (radOn==3? s.ativado : null))}></label>
+                    {imgsref.map((e, i)=>{
+                            return(<>
+                                <input type="radio" name="rad" id={"pgcomprad"+(i+1)} className={s.compradio} onChange={()=>setRadOn(i+1)}/>
+                                <label htmlFor={"pgcomprad"+(i+1)}  className={classNames(s.labelcomp, (radOn==i+1? s.ativado : null))}></label>
+                            </>)
+                        })}
                     </div>
                 </div>
             </section>
+            <section className={s.selec_cor}>
+                <ul>
+                    {
+                        tenis.map((t, i)=>{
+                            return(
+                                <li>
+                                    <button className={classNames(s.cor_item, (corSelec == t.cor? s.ativado: null))}
+                                    style={{backgroundColor: t.cor}}
+                                    onClick={()=> {
+                                        setcorSelec(t.cor);
+                                        setimgSelec(t.url)
+                                        setImgsRef(t.imgs)
+                                        setTextImg(t.text)
+                                    }}
+                                    >
+                                    </button>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </section>
+            <section className={s.selec_tam}>
+                <div className={s.selec_tipotam}>
+                    <button className={(tipoTam=='Masculino'? s.ativado: null)} onClick={()=> setTipoTam('Masculino')}>Masculino</button>
+                    <button className={(tipoTam=='Feminino'? s.ativado: null)} onClick={()=> setTipoTam('Feminino')}>Feminino</button>
+                </div>
+                <ul style={{display: (tipoTam =='Masculino'? "flex": "none")}}>
+                    {
+                        tamMas.map((e)=>{
+                            return(
+                                <li>
+                                    <button onClick={()=>setTamSelec(e.text)} className={classNames(s.btn_tam, (tamSelec==e.text? s.ativado: null))}>{e.text}</button>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+                <ul style={{display: (tipoTam =='Feminino'? "flex": "none")}}>
+                    {
+                        tamFem.map((e)=>{
+                            return(
+                                <li>
+                                    <button onClick={()=> {setTamSelec(e.text)}} className={(tamSelec==e.text? s.ativado: null)}>{e.text}</button>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </section>
+            <CardComprar imagem={imgSelec} modelo={textImg} tamanho={tamSelec} tipotam={tipoTam} encaminhar="erro"/>
         </section>
     )
 }
