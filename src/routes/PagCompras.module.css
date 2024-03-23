@@ -38,6 +38,10 @@
     padding: 0.5rem;
 }
 
+.pmodel strong span{
+    color: #ffcb0c;
+}
+
 .divimgs{
     width: 100%;
     display: flex;
@@ -56,7 +60,7 @@
 }
 
 .divimgsref img{
-    width: 30vw;
+    width: 50vw;
 }
 
 .divinputs{

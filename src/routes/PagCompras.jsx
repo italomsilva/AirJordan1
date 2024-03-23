@@ -8,7 +8,7 @@ import CardComprar from '../components/comprar/CardComprar';
 
 function PagCompras(){
     const [radOn, setRadOn] = useState(1);
-    const{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef } = useContext(TenisContext);
+    const{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tipoTam, setTipoTam, imgsref, setImgsRef, idTenis, setIdTenis } = useContext(TenisContext);
     return(
         <section className={s.pagcompras} id='pagCompras'>
             <div className={s.headPagComp}>
@@ -21,8 +21,8 @@ function PagCompras(){
             </div>
             <section>
                 <p className={s.pmodel}>
-                    <span>N do modelo</span>
-                    <strong>5.0 <FaStar/></strong>
+                    <span>Id: {idTenis}</span>
+                    <strong>5.0 <span><FaStar/></span></strong>
                 </p>
                 <div>
                     <div style={{marginLeft: ((radOn-1)*-100)+"vw"}} className={s.divimgs}>
@@ -55,9 +55,11 @@ function PagCompras(){
                                     style={{backgroundColor: t.cor}}
                                     onClick={()=> {
                                         setcorSelec(t.cor);
-                                        setimgSelec(t.url)
-                                        setImgsRef(t.imgs)
-                                        setTextImg(t.text)
+                                        setimgSelec(t.url);
+                                        setImgsRef(t.imgs);
+                                        setTextImg(t.text);
+                                        setRadOn(1);
+                                        setIdTenis(t.id)
                                     }}
                                     >
                                     </button>
@@ -69,8 +71,8 @@ function PagCompras(){
             </section>
             <section className={s.selec_tam}>
                 <div className={s.selec_tipotam}>
-                    <button className={(tipoTam=='Masculino'? s.ativado: null)} onClick={()=> setTipoTam('Masculino')}>Masculino</button>
-                    <button className={(tipoTam=='Feminino'? s.ativado: null)} onClick={()=> setTipoTam('Feminino')}>Feminino</button>
+                    <button className={(tipoTam=='Masculino'? s.ativado: null)} onClick={()=> {setTipoTam('Masculino'); setTamSelec(tamMas[0].text)}}>Masculino</button>
+                    <button className={(tipoTam=='Feminino'? s.ativado: null)} onClick={()=> {setTipoTam('Feminino'); setTamSelec(tamFem[0].text)}}>Feminino</button>
                 </div>
                 <ul style={{display: (tipoTam =='Masculino'? "flex": "none")}}>
                     {

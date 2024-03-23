@@ -9,7 +9,7 @@ import { TenisContext } from '../../context/tenisContext';
 function SectionComprar(){
 
 
-const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef } = useContext(TenisContext);
+const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, setImgsRef, setIdTenis } = useContext(TenisContext);
 
 
   var verifCard=()=>{
@@ -27,7 +27,7 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
                 <h3 className={classNames(tit.subtit, tit.pequeno)} style={{paddingLeft: '1rem'}}>Escolha a cor</h3>
                 <ul className={s.colorlist_ul}>
                     {tenis.map((objTenis, index) => (
-                        <li onClick={() => {setimgSelec(objTenis.url);setcorSelec(objTenis.cor); setTextImg(objTenis.text); setLiSelet(index); setImgsRef(objTenis.imgs)}} className={classNames(index==liSelec? s.ativado : null)}>
+                        <li onClick={() => {setimgSelec(objTenis.url);setcorSelec(objTenis.cor); setTextImg(objTenis.text); setLiSelet(index); setImgsRef(objTenis.imgs); setIdTenis(objTenis.id)}} className={classNames(index==liSelec? s.ativado : null)}>
                             <img
                                 key={index}
                                 src={objTenis.url}
