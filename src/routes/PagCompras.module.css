@@ -156,3 +156,94 @@
 .selec_tam ul li button{
     width: 100%;
 }
+.asidetit{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.asidetit a{
+    font-size: 1.8rem;
+    color: #1e1e1e;
+}
+.asidetit a:hover{
+    color: #3e3e3e;
+}
+.asidetit a::after{
+    display: block;
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: #ff8800;
+}
+.divmore{
+    transition: 3s;
+    display: none;
+    overflow: hidden;
+}
+
+.divmore.ativado{
+    display: block;
+}
+
+@media(min-width: 720px) {
+
+    .tit{
+        font-size: 3rem;
+    }
+    .tit::after{
+        width: 15%;
+    }
+    .divimgsref img{
+        width: 20vw;
+    }
+
+    .conteiner_selec{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selec_tam{
+        width: 50%;
+    }
+    .selec_cor{
+        width: 30%;
+    }
+
+    .selec_cor ul{
+        display: grid;
+        grid-template-columns: 10vw 10vw 10vw;
+        align-content: center;
+        justify-items: center;
+        row-gap: 1rem;
+    }
+
+    .selec_cor ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 8px;
+        background-color: #00000000;
+        transition: all 0.3s;
+    }
+
+    .selec_cor ul li.ativado{
+        width: 2.5rem;
+        height: 1.6rem;
+        background-color: #ff88005c;
+    }
+
+    .asidetit a{
+        font-size: 2rem;
+    }
+
+    .asidetit a::after{
+        width: 4rem;
+    }
+
+}
