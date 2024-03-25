@@ -84,6 +84,7 @@
     border-radius: 100%;
     transition: all 0.5s;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .labelcomp.ativado{
@@ -106,6 +107,7 @@
     border-radius: 3px;
     border: none;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .cor_item.ativado{
@@ -131,6 +133,7 @@
     font-weight: 800;
     border-radius: 0.1rem;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .selec_tam button.ativado{

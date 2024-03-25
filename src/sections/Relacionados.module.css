@@ -18,6 +18,13 @@
     min-width: 40vw;
     padding: 0.5rem;
     min-height: 20vh;
+    background-color: #00000000;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #ff880045;
 }
 
 .divimg{

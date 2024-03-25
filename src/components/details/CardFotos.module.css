@@ -298,6 +298,7 @@
         border: 1px solid #ff8800;
         border-radius: 100%;
         transition: all 0.7s;
+        cursor: pointer;
         }
 
     .detlabel.ativado{
