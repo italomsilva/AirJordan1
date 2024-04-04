@@ -87,12 +87,14 @@
     color: #1e1e1e;
     border: 3px solid #ff8800;
     border-radius: 0.2rem;
+    letter-spacing: 0px;
     transition: 0.5s;
 }
 
 .home_box2 a:hover{
-    background-color: transparent;
+    background-color: #ff88001e;
     color: #ff8800;
+    letter-spacing: 2px;
 }
 
 @media(max-width: 720px){

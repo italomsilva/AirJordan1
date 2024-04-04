@@ -105,8 +105,9 @@
 }
 
 .tamcard{
-    background-color: #bcbcbc;
-    color: #000000;
+    background-color: #ff880077;
+    border: 2px solid #ff8800;
+    color: #1e1e1e;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -117,9 +118,22 @@
     box-shadow: 3px 3px 6px #00000074;
 }
 
+.tamcard:hover{
+    background-color: #ff880089;
+}
+
 .tamcard h3{
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+}
+
+.tamcard h3::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #ff8800;
+    margin: auto;
 }
 
 .tamcard ul{
@@ -182,6 +196,7 @@
     max-height: 35vh;
     border-radius: 10px;
 }
+
 
 @media(max-width: 720px){
     .comp_colorlist{
