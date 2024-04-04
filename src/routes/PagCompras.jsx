@@ -9,7 +9,7 @@ import Relacionados from '../sections/Relacionados'
 
 function PagCompras(){
     const [radOn, setRadOn] = useState(1);
-    const{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tipoTam, setTipoTam, imgsref, setImgsRef, idTenis, setIdTenis } = useContext(TenisContext);
+    const{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tipoTam, setTipoTam, imgsref, setImgsRef, idTenis, setIdTenis, setCardPosit } = useContext(TenisContext);
     const [relOn, setRelOn] = useState(false);
     useEffect(()=>{
         window.scrollTo(0, 0)
@@ -54,7 +54,7 @@ function PagCompras(){
                 <section className={s.selec_cor}>
                     <ul>
                         {
-                            tenis.map((t, i)=>{
+                            tenis.map((t)=>{
                                 return(
                                     <li className={(corSelec == t.cor? s.ativado: null)}>
                                         <button className={classNames(s.cor_item, (corSelec == t.cor? s.ativado: null))}
@@ -65,7 +65,8 @@ function PagCompras(){
                                             setImgsRef(t.imgs);
                                             setTextImg(t.text);
                                             setRadOn(1);
-                                            setIdTenis(t.id)
+                                            setIdTenis(t.id);
+                                            setCardPosit("fixed");
                                         }}
                                         >
                                         </button>
@@ -85,7 +86,11 @@ function PagCompras(){
                             tamMas.map((e)=>{
                                 return(
                                     <li>
-                                        <button onClick={()=>setTamSelec(e.text)} className={classNames(s.btn_tam, (tamSelec==e.text? s.ativado: null))}>{e.text}</button>
+                                        <button 
+                                        onClick={()=>{
+                                        setTamSelec(e.text);
+                                        setCardPosit("fixed");
+                                        }} className={classNames(s.btn_tam, (tamSelec==e.text? s.ativado: null))}>{e.text}</button>
                                     </li>
                                 )
                             })
@@ -96,7 +101,10 @@ function PagCompras(){
                             tamFem.map((e)=>{
                                 return(
                                     <li>
-                                        <button onClick={()=> {setTamSelec(e.text)}} className={(tamSelec==e.text? s.ativado: null)}>{e.text}</button>
+                                        <button onClick={()=> {
+                                            setTamSelec(e.text);
+                                            setCardPosit("fixed");
+                                            }} className={(tamSelec==e.text? s.ativado: null)}>{e.text}</button>
                                     </li>
                                 )
                             })
@@ -106,7 +114,7 @@ function PagCompras(){
             </div>
             <CardComprar imagem={imgSelec} modelo={textImg} tamanho={tamSelec} tipotam={tipoTam} encaminhar="erro"/>
             <aside>
-                <h1 className={s.asidetit}><a id='#rel' href='#Rel'  onClick={()=>{ setRelOn(!relOn)}}>Ver mais! {(relOn==false? <FaAngleDown/>: <FaAngleRight/>)}</a></h1>
+                <h1 className={s.asidetit}><a id='#rel' href='#Rel'  onClick={()=>{ setRelOn(!relOn)}}>{relOn==true? "Ver Menos" : "Ver Mais"} {(relOn==false? <FaAngleDown/>: <FaAngleRight/>)}</a></h1>
                 <div className={classNames(s.divmore, (relOn==true? s.ativado: null))}>
                 <Relacionados/>
                 <CardComprar imagem={imgSelec} modelo={textImg} tamanho={tamSelec} tipotam={tipoTam} encaminhar="erro"/>

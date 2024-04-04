@@ -13,11 +13,12 @@ export const TenisProvider = ({children}) =>{
     const [tipoTam, setTipoTam]= useState(tamMas[0].tipo);
     const [liSelec, setLiSelet]= useState(0);
     const [imgsref, setImgsRef]= useState(tenis[0].imgs);
-    const [idTenis, setIdTenis]= useState(tenis[0].id)
+    const [idTenis, setIdTenis]= useState(tenis[0].id);
+    const [cardPosit, setCardPosit] = useState("inherit")
     
     
     return(
-        <TenisContext.Provider value={{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef, idTenis, setIdTenis }}>
+        <TenisContext.Provider value={{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef, idTenis, setIdTenis, cardPosit, setCardPosit }}>
             {children}
         </TenisContext.Provider>
     )
