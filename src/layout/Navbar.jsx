@@ -18,8 +18,8 @@ function Navbar() {
                     <img src={nikebranco} alt="" />
                 </div>
                 <menu className={styles.menulist}>
-                    <li>
-                        <Link reloadDocument to="/AirJordan1">Home</Link>
+                    <li onClick={()=>{scrollTo(0,0)}}>
+                        <Link to="/AirJordan1">Home</Link>
                     </li>
                     <li>
                         <a href="https://italomsilva.github.io/AirJordan1/#detalhes">Detalhes</a>

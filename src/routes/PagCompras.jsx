@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { TenisContext } from '../context/tenisContext';
 import  s from "./PagCompras.module.css"
 import { FaStar, FaAngleLeft, FaAngleDown, FaAngleRight } from 'react-icons/fa'
@@ -11,6 +11,9 @@ function PagCompras(){
     const [radOn, setRadOn] = useState(1);
     const{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tipoTam, setTipoTam, imgsref, setImgsRef, idTenis, setIdTenis } = useContext(TenisContext);
     const [relOn, setRelOn] = useState(false);
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, [])
     return(
         <section className={s.pagcompras} id='pagCompras'>
             <div className={s.headPagComp}>
