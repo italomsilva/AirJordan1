@@ -221,6 +221,10 @@
     transition: all 0.5s;
 }
 
+.span_btn button a{
+    color: #111;
+}
+
 .cardbuy .div_txt .span_btn button:hover{
     background-color: #ff880089;
     color: #995200;

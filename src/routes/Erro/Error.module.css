@@ -1,0 +1,28 @@
+.sectionerror{
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ff8800;
+    text-align: center;
+    row-gap: 3rem;
+}
+
+.sectionerror h1{
+    font-size: 3rem;
+}
+
+.sectionerror a{
+    color: #ff8800;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.sectionerror ul{
+    color: #ffffff89;
+    list-style: none;
+    font-size: 0.8rem;
+}

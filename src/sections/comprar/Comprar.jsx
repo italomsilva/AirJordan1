@@ -3,8 +3,10 @@ import s from './Comprar.module.css'
 import palmilha from '../../img/banners/palmilha.jpg'
 import tit from '../../components/Titulos.module.css';
 import classNames from 'classnames';
-import CardComprar from './CardComprar';
+import CardComprar from '../../components/Comprar/CardComprar';
 import { TenisContext } from '../../context/tenisContext';
+
+import TabelaTamanho from '../../components/Comprar/TabelaTamanho';
 
 function SectionComprar(){
 
@@ -62,55 +64,8 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
             <h3 className={classNames(tit.subtit, tit.pequeno)} style={{paddingLeft: '1rem'}}>Escolha o tamanho</h3>
             <div className={s.tam_cardsconteiner}>
                 <div className={s.tam_cards}>
-                    <div className={s.tamcard}>
-                        <h3>Masculino</h3>
-                        <ul>
-                            {tamMas.map((el, i)=>{
-                                return(
-                                    <li>
-                                         <input type="radio"
-                                            key={i}
-                                            id={el.tipo+el.text}
-                                            name='radiotam'
-                                            value={el.valor}
-                                            onChange={()=>{
-                                                setTamSelec(el.text);
-                                                setTamCM(el.valor);
-                                                setTipoTam(el.tipo)
-                                                setCardPosit("fixed");
-                                            }}
-                                        />
-                                        <label htmlFor={el.tipo+el.text}>{el.text}</label>
-                                    </li>
-                                )
-                            })
-                            }
-                        </ul>
-                    </div>
-                    <div className={s.tamcard}>
-                        <h3>Feminino</h3>
-                        <ul>
-                            {tamFem.map((el, i)=>{
-                                return(
-                                    <li>
-                                        <input type="radio"
-                                            key={i}
-                                            id={el.tipo+el.text}
-                                            name='radiotam'
-                                            value={el.valor}
-                                            onChange={()=>{
-                                                setTamSelec(el.text);
-                                                setTamCM(el.valor);
-                                                setTipoTam(el.tipo)
-                                                setCardPosit("fixed");
-                                            }}
-                                        />
-                                        <label htmlFor={el.tipo+el.text}>{el.text}</label>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
+                    <TabelaTamanho arr={tamMas}/>
+                    <TabelaTamanho arr={tamFem}/>
                 </div>
                 <article className={s.tam_article}>
                     <div>

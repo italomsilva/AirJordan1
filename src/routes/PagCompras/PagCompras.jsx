@@ -4,7 +4,7 @@ import { TenisContext } from '../../context/tenisContext';
 import  s from "./PagCompras.module.css"
 import { FaStar, FaAngleLeft, FaAngleDown, FaAngleRight } from 'react-icons/fa'
 import classNames from 'classnames';
-import CardComprar from '../../sections/comprar/CardComprar';
+import CardComprar from '../../components/Comprar/CardComprar';
 import Relacionados from '../../sections/Relacionados/Relacionados'
 
 function PagCompras(){

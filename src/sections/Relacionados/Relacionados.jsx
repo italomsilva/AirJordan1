@@ -4,6 +4,7 @@ import {FaStar} from 'react-icons/fa'
 import { relacionados } from '../../databases/DbRelacionados';
 import classNames from 'classnames';
 import { useState } from 'react';
+import {Link} from 'react-router-dom' 
 
 var tela= relacionados.length;
 tela=tela*100;
@@ -17,6 +18,7 @@ function Relacionados(){
     const [preco, setPreco]= useState(relacionados[0].preco);
     const [tamanhos, setTams]= useState(relacionados[0].tamanho);
     const [tamselec, setTamSelec]= useState(tamanhos[0]);
+    const [idRel, setIdRel]= useState(relacionados[0].id)
  
     return(
         <section id="relacionados" className={s.section_relacionados}>
@@ -31,7 +33,8 @@ function Relacionados(){
                                 setAvalSelec(el.avaliacao);
                                 setImgSelec(el.imagem);
                                 setTextSelec(el.texto);
-                                setTams(el.tamanho)
+                                setTams(el.tamanho);
+                                setIdRel(el.id)
                                 }}>
                                 <div className={s.divimg}>
                                     <img src={el.imagem}/>
@@ -43,7 +46,7 @@ function Relacionados(){
                                             <span><span className={s.star_icon}><FaStar/></span>{el.avaliacao}</span>
                                             <strong>R${el.preco}</strong>
                                         </p>
-                                        <a onClick={(e)=>{e.stopPropagation()}} href="">Comprar</a>
+                                            <Link onClick={(e)=>{e.stopPropagation()}} to={`/AirJordan1/comprar:${el.id}`}>Comprar</Link>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +78,9 @@ function Relacionados(){
                     </div>
                     <div className={s.div_txt}>
                         <span className={s.span_btn}>
-                            <button>Comprar</button>
+                           <button>
+                               <Link to={`/AirJordan1/comprar:${idRel}`}>Comprar</Link>
+                           </button>
                         </span>
                         <span className={s.span_txt}>
                             <strong>R$ {preco}</strong>
