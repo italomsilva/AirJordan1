@@ -1,7 +1,7 @@
 import s from './Relacionados.module.css'
-import tit from '../components/Titulos.module.css'
+import tit from '../../components/Titulos.module.css'
 import {FaStar} from 'react-icons/fa'
-import { relacionados } from '../databases/DbRelacionados';
+import { relacionados } from '../../databases/DbRelacionados';
 import classNames from 'classnames';
 import { useState } from 'react';
 

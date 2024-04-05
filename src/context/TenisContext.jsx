@@ -18,7 +18,7 @@ export const TenisProvider = ({children}) =>{
     
     
     return(
-        <TenisContext.Provider value={{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, imgsref, setImgsRef, idTenis, setIdTenis, cardPosit, setCardPosit }}>
+        <TenisContext.Provider value={{tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, imgsref, setImgsRef, idTenis, setIdTenis, cardPosit, setCardPosit }}>
             {children}
         </TenisContext.Provider>
     )

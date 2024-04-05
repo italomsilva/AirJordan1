@@ -1,8 +1,8 @@
 import styles from './Conteiner.module.css'
-import Home from '../sections/Home'
-import Details from '../sections/Details'
-import Comprar from '../sections/Comprar.jsx'
-import Relacionados from '../sections/Relacionados.jsx'
+import Home from '../sections/Home/Home'
+import Details from '../sections/Detalhes/Details.jsx'
+import Comprar from '../sections/comprar/Comprar'
+import Relacionados from '../sections/Relacionados/Relacionados.jsx'
 function Conteiner() {
 
     return (

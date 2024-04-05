@@ -4,13 +4,11 @@ import classNames from 'classnames';
 
 function CardFotos(){
     const [radioOn, setRadioOn]= useState(0)
-    const slides =[
-       0,1,2
-    ]
+    const slides = 3;
 
     useEffect(()=>{
         const interv = setInterval(()=>{
-            setRadioOn((i)=>(i+1) % slides.length)
+            setRadioOn((i)=>(i+1) % slides)
         }, 5000);
         return ()=>{
             clearInterval(interv)

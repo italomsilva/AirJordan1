@@ -11,9 +11,8 @@ function Navbar() {
 
     return(
         <nav className={styles.nav}>
-            <div className={classNames(styles.menubur, {
-                [styles.menu_ativo]: ativo, 
-                })}>
+            <div className={classNames(styles.menubur, 
+                (ativo==true? styles.menu_ativo : null))}>
                 <div className={styles.logo}>
                     <img src={nikebranco} alt="" />
                 </div>

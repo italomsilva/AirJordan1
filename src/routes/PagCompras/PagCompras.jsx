@@ -1,11 +1,11 @@
 import {Link} from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
-import { TenisContext } from '../context/tenisContext';
+import { TenisContext } from '../../context/tenisContext';
 import  s from "./PagCompras.module.css"
 import { FaStar, FaAngleLeft, FaAngleDown, FaAngleRight } from 'react-icons/fa'
 import classNames from 'classnames';
-import CardComprar from '../components/comprar/CardComprar';
-import Relacionados from '../sections/Relacionados'
+import CardComprar from '../../sections/comprar/CardComprar';
+import Relacionados from '../../sections/Relacionados/Relacionados'
 
 function PagCompras(){
     const [radOn, setRadOn] = useState(1);

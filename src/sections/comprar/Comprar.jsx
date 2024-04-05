@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import s from './SectionComprar.module.css'
+import s from './Comprar.module.css'
 import palmilha from '../../img/banners/palmilha.jpg'
-import tit from '../Titulos.module.css';
+import tit from '../../components/Titulos.module.css';
 import classNames from 'classnames';
 import CardComprar from './CardComprar';
 import { TenisContext } from '../../context/tenisContext';
@@ -9,7 +9,7 @@ import { TenisContext } from '../../context/tenisContext';
 function SectionComprar(){
 
 
-const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, liSelec, setLiSelet, setImgsRef, setIdTenis, cardPosit, setCardPosit } = useContext(TenisContext);
+const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, textImg, setTextImg, tamSelec, setTamSelec, tamCM, setTamCM, tipoTam, setTipoTam, setImgsRef, setIdTenis, setCardPosit } = useContext(TenisContext);
 
 
   var verifCard=()=>{
@@ -21,6 +21,11 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
   };
 
   return (
+    <section id="comprar">
+    <div style={{backgroundColor: '#fff'}}>
+        <h3 className={classNames(tit.subtit, tit.centralizado)}>Peça já o seu!</h3>
+    </div>
+
     <div className={s.comp_conteiner}>
         <div className={s.comp_colorlist} >
             <div>
@@ -32,12 +37,11 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
                             setimgSelec(objTenis.url);
                             setcorSelec(objTenis.cor);
                             setTextImg(objTenis.text);
-                            setLiSelet(index);
                             setImgsRef(objTenis.imgs);
                             setIdTenis(objTenis.id);
                             setCardPosit("fixed");
                             }} 
-                        className={classNames(index==liSelec? s.ativado : null)}>
+                        className={classNames(objTenis.cor == corSelec? s.ativado : null)}>
                             <img
                                 key={index}
                                 src={objTenis.url}
@@ -131,6 +135,7 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
         encaminhar="comprar"
         />
     </div>
+    </section>
   );
 };
 

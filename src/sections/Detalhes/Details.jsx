@@ -1,6 +1,6 @@
 import styles from './Details.module.css'
-import tit from '../components/Titulos.module.css'
-import CardFotos from '../components/details/CardFotos'
+import tit from '../../components/Titulos.module.css'
+import CardFotos from './CardFotos'
 import classNames from 'classnames'
 
 function Details(){
