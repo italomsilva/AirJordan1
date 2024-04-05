@@ -19,6 +19,13 @@
     color: #ff8800;
     text-decoration: underline;
     font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.sectionerror a:hover{
+  color: #fc9116ac;
+  letter-spacing: 3px;
 }
 
 .sectionerror ul{
