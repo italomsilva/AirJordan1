@@ -1,0 +1,233 @@
+
+.tit{
+    padding: 0 0.5rem;  
+    font-size: 2rem;  
+}
+
+.tit::after{
+    display: block;
+    content: "";
+    width: 25%;
+    height: 3px;
+    background-color: #ff8800;
+}
+
+.pmodel{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.pmodel strong span{
+    color: #ffcb0c;
+}
+
+.divimgs{
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+
+.divimgsref{
+    display: flex;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #1e1e1e19;
+}
+
+.divimgsref img{
+    width: 50vw;
+}
+
+.divinputs{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.compradio{
+    display: none;
+    accent-color: #ff8800;
+    margin-bottom: 5rem;
+}
+
+.labelcomp{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ff8800;
+    border-radius: 100%;
+    transition: all 0.5s;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.labelcomp.ativado{
+    background-color: #ff8800;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.selec_cor ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.cor_item{
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cor_item.ativado{
+   border-radius: 10px;
+}
+
+.selec_tipotam{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.selec_tam button{
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    background-color: #ff880045;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0;
+    font-weight: 800;
+    border-radius: 0.1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.selec_tam button.ativado{
+    background-color: #ff880089;
+    border: 2px solid #ff8800;
+}
+.selec_tam button:hover{
+    background-color: #ff880068;
+}
+.selec_tipotam button{
+    width: 20%;
+}
+.selec_tam ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.selec_tam ul li{
+    width: 8%;
+}
+
+.selec_tam ul li button{
+    width: 100%;
+}
+.asidetit{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.asidetit a{
+    font-size: 1.8rem;
+    color: #1e1e1e;
+}
+.asidetit a:hover{
+    color: #3e3e3e;
+}
+.asidetit a::after{
+    display: block;
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: #ff8800;
+}
+.divmore{
+    transition: 3s;
+    display: none;
+    overflow: hidden;
+}
+
+.divmore.ativado{
+    display: block;
+}
+
+@media(min-width: 720px) {
+
+    .tit{
+        font-size: 3rem;
+    }
+    .tit::after{
+        width: 15%;
+    }
+    .divimgsref img{
+        width: 20vw;
+    }
+
+    .conteiner_selec{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selec_tam{
+        width: 50%;
+    }
+    .selec_cor{
+        width: 30%;
+    }
+
+    .selec_cor ul{
+        display: grid;
+        grid-template-columns: 10vw 10vw 10vw;
+        align-content: center;
+        justify-items: center;
+        row-gap: 1rem;
+    }
+
+    .selec_cor ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 8px;
+        background-color: #00000000;
+        transition: all 0.3s;
+    }
+
+    .selec_cor ul li.ativado{
+        width: 2.5rem;
+        height: 1.6rem;
+        background-color: #ff88005c;
+    }
+
+    .asidetit a{
+        font-size: 2rem;
+    }
+
+    .asidetit a::after{
+        width: 4rem;
+    }
+
+}

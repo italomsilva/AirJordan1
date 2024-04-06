@@ -4,7 +4,7 @@ import { TenisContext } from '../../context/tenisContext';
 import { useContext } from 'react';
 import {FaTrash} from 'react-icons/fa'
 
-function CardComprar({ imagem, modelo, tamanho, tipotam, encaminhar}){
+function CardComprar({ imagem, titulo, modelo, tamanho, tipotam, encaminhar}){
     const {cardPosit, setCardPosit} = useContext(TenisContext);
     return(
         <aside className={s.card_comprar} style={{position: cardPosit}}>
@@ -13,7 +13,7 @@ function CardComprar({ imagem, modelo, tamanho, tipotam, encaminhar}){
         </div>
         <div className={s.cardcomprar_txt}>
             <div>
-                <h2>Air Jordan 1</h2>
+                <h2>{titulo}</h2>
                 <p>Modelo: <strong>{modelo}</strong></p>
                 <p>Tamanho: <strong>{tipotam}</strong> - <strong>{tamanho}</strong></p>
                 <p className={s.preco}><span>R$ 150,00</span> <strong>R$ 119,90</strong></p>

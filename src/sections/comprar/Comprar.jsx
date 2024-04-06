@@ -82,6 +82,7 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
             </div>
         </div>
         <CardComprar
+        titulo="Air Jordan 1"
         tamanho={tamSelec}
         modelo={textImg}
         imagem={imgSelec}

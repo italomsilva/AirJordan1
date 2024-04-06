@@ -18,7 +18,8 @@ function Relacionados(){
     const [preco, setPreco]= useState(relacionados[0].preco);
     const [tamanhos, setTams]= useState(relacionados[0].tamanho);
     const [tamselec, setTamSelec]= useState(tamanhos[0]);
-    const [idRel, setIdRel]= useState(relacionados[0].id)
+    const [idRel, setIdRel]= useState(relacionados[0].id);
+    const [indexSelec, setIndexSelec] = useState(0);
  
     return(
         <section id="relacionados" className={s.section_relacionados}>
@@ -26,7 +27,7 @@ function Relacionados(){
             <div className={s.contslide}>
                 <div className={s.slide}>
                     {
-                        relacionados.map((el)=>{ return(
+                        relacionados.map((el, index)=>{ return(
                             <div className={s.card} onClick={()=>{
                                 setClicado(!clicado); 
                                 setPreco(el.preco);
@@ -34,7 +35,8 @@ function Relacionados(){
                                 setImgSelec(el.imagem);
                                 setTextSelec(el.texto);
                                 setTams(el.tamanho);
-                                setIdRel(el.id)
+                                setIdRel(el.id);
+                                setIndexSelec(index)
                                 }}>
                                 <div className={s.divimg}>
                                     <img src={el.imagem}/>
@@ -46,7 +48,7 @@ function Relacionados(){
                                             <span><span className={s.star_icon}><FaStar/></span>{el.avaliacao}</span>
                                             <strong>R${el.preco}</strong>
                                         </p>
-                                            <Link onClick={(e)=>{e.stopPropagation()}} to={`/AirJordan1/comprar:${el.id}`}>Comprar</Link>
+                                            <Link onClick={(e)=>{e.stopPropagation()}} to={`/AirJordan1/comprar/${indexSelec}`}>Comprar</Link>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +81,7 @@ function Relacionados(){
                     <div className={s.div_txt}>
                         <span className={s.span_btn}>
                            <button>
-                               <Link to={`/AirJordan1/comprar:${idRel}`}>Comprar</Link>
+                               <Link to={`/AirJordan1/comprar/${indexSelec}`}>Comprar</Link>
                            </button>
                         </span>
                         <span className={s.span_txt}>
