@@ -1,22 +1,3 @@
-.pagcompras{
-    padding-top: 70px;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    max-width: 100%;
-    min-height: 90vh;
-    overflow-x: hidden;
-}
-
-.headPagComp{
-    background-color: #ff8800;
-    padding: 0.5rem;
-    font-size: 1.8rem;
-}
-
-.headPagComp a{
-    color: #1e1e1e;
-}
 
 .tit{
     padding: 0 0.5rem;  

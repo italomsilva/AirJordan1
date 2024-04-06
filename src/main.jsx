@@ -5,7 +5,8 @@ import './index.css'
 import { createBrowserRouter, NavLink, RouterProvider, } from "react-router-dom"
 import Conteiner from './routes/Conteiner.jsx'
 import Contact from './routes/Contato/Contact.jsx'
-import PagCompras from './routes/PagCompras/PagCompras.jsx'
+import PgComp_AirJordan from './routes/PgComprar/AirJordan1/PgComp_Airjordan.jsx'
+import PaginaDeCompras from './components/PagCompras/PaginaDeCompras.jsx'
 import { TenisProvider } from './context/tenisContext.jsx'
 import Error from './routes/Erro/Error.jsx'
 
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
         element: <Contact/>
       },
       {
-        path: "comprar",
-        element: <PagCompras/>,
+        path: "comprarAj1",
+        element: <PaginaDeCompras child={(<PgComp_AirJordan />)} />,
       },   
     ],
   },

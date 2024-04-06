@@ -11,12 +11,11 @@ function Navbar() {
 
     return(
         <nav className={styles.nav}>
-            <div className={classNames(styles.menubur, 
-                (ativo==true? styles.menu_ativo : null))}>
+            <div  className={classNames(styles.menubur, (ativo==true? styles.menu_ativo : null))}>
                 <div className={styles.logo}>
                     <img src={nikebranco} alt="" />
                 </div>
-                <menu className={styles.menulist}>
+                <menu onMouseOut={()=>setAtivo(false)}  className={styles.menulist}>
                     <li onClick={()=>{scrollTo(0,0)}}>
                         <Link to="/AirJordan1">Home</Link>
                     </li>

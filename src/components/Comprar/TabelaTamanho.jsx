@@ -7,7 +7,7 @@ function TabelaTamanho ({arr}){
 
    return(
         <div className={s.tamcard}>
-            <h3>Feminino</h3>
+            <h3>{arr[0].tipo}</h3>
             <ul>
                 {arr.map((el, i)=>{
                     return(

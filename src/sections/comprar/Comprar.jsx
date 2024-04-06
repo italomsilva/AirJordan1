@@ -87,7 +87,7 @@ const {tenis, tamFem, tamMas, imgSelec, setimgSelec, corSelec, setcorSelec, text
         imagem={imgSelec}
         tipotam={tipoTam}
         clicado={verifCard}
-        encaminhar="comprar"
+        encaminhar="comprarAj1"
         />
     </div>
     </section>
