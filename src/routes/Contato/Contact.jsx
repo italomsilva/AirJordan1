@@ -11,9 +11,17 @@ function Contact() {
     }
 
     
-    const convNome = encodeURIComponent(`Olá, sou ${inpnome}. `);
-    const convMsg = encodeURIComponent(inpMsg);
-    const link = `http://wa.me/5585991289947?text=${convNome}${convMsg}`;
+    const link =  'mailto:dev.italoms@gmail.com?subject=AirJodan1%20Contact:'
+    + encodeURIComponent(inpnome)
+    + '&body='
+    + encodeURIComponent(
+        'Olá, meu nome é ' + inpnome + ',\n\n' +
+        inpMsg + '\n\n' +
+        'Atenciosamente,\n' + inpnome
+    );
+
+
+
     useEffect(()=>{
         window.scrollTo(0,0)
     }, [])

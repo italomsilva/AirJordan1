@@ -2,7 +2,7 @@ import nikebranco from '../img/logo/nike1-branco.png'
 import styles from './Navbar.module.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import classNames from 'classnames'
 
 function Navbar() {
@@ -32,15 +32,15 @@ function Navbar() {
                         <Link to="contact">Contato</Link>
                     </li>
                     <li className={styles.menu_icons}>
-                        <a target='_blank' href="https://www.instagram.com/italoms085?igsh=c2lub2tydjQ0bDU="><FaInstagram/></a>
+                        <a target='_blank' href="mailTo:dev.italoms@gmail.com"><FaEnvelope/></a>
                         <a target='_blank' href="https://github.com/italomsilva"><FaGithub/></a>
-                        <a target='_blank' href="https://www.linkedin.com/in/italo-monteiro-905273296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedinIn/></a>
+                        <a target='_blank' href="https://www.linkedin.com/in/italo-monteiro-905273296"><FaLinkedinIn/></a>
                     </li>
                 </menu>
                 <div className={styles.nav_icons}>
-                        <a target='_blank' href="https://www.instagram.com/italoms085?igsh=c2lub2tydjQ0bDU="><FaInstagram/></a>
+                        <a target='_blank' href="mailTo:dev.italoms@gmail.com"><FaEnvelope/></a>
                         <a target='_blank' href="https://github.com/italomsilva"><FaGithub/></a>
-                        <a target='_blank' href="https://www.linkedin.com/in/italo-monteiro-905273296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedinIn/></a>
+                        <a target='_blank' href="https://www.linkedin.com/in/italo-monteiro-905273296"><FaLinkedinIn/></a>
                 </div>
                 <div className={styles.menuburguer} onClick={()=>setAtivo(!ativo)}>
                     <span></span>
