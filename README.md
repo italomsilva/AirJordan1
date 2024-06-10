@@ -8,7 +8,7 @@ A landing page foi projetada com o objetivo de destacar o design e a história d
 
 ## Tecnologias Utilizadas
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **React**
+- HTML5
+- CSS3
+- JavaScript
+- React
