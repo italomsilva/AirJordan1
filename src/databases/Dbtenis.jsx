@@ -2,7 +2,7 @@
 export const tenis = [
     {
         id: "000124-01",
-        url: 'https://i.imgur.com/JKwr4rC.png',
+        url: 'src/img/aj-classic.png',
         cor: '#ff0000',
         text: 'Classic',
         imgs: ['https://i.imgur.com/JKwr4rC.png', 'https://i.imgur.com/JKwr4rC.png'],
