@@ -1,92 +1,91 @@
-
 export const tenis = [
     {
         id: "000124-01",
         url: 'src/img/aj-classic.png',
         cor: '#ff0000',
         text: 'Classic',
-        imgs: ['https://i.imgur.com/JKwr4rC.png', 'https://i.imgur.com/JKwr4rC.png'],
+        imgs: ['src/img/aj-classic.png'],
     },
     {
         id: "000124-02",
-        url: 'https://i.imgur.com/YRWHlJv.png',
+        url: 'src/img/aj-classic.png',
         cor: '#ff3c00',
         text: 'Orange',
-        imgs: ['https://i.imgur.com/YRWHlJv.png', 'https://i.imgur.com/YRWHlJv.png', 'https://i.imgur.com/YRWHlJv.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-03",
-        url: 'https://i.imgur.com/vEQtIlq.png',
+        url: 'src/img/aj-classic.png',
         cor: '#592800',
         text: 'Brown',
-        imgs: ['https://i.imgur.com/vEQtIlq.png', 'https://i.imgur.com/vEQtIlq.png', 'https://i.imgur.com/vEQtIlq.png', 'https://i.imgur.com/vEQtIlq.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-04",
-        url: 'https://i.imgur.com/ioqbINi.png',
+        url: 'src/img/aj-classic.png',
         cor: '#000000',
         text: 'BlackWhite',
-        imgs: ['https://i.imgur.com/ioqbINi.png', 'https://i.imgur.com/ioqbINi.png', 'https://i.imgur.com/ioqbINi.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-05",
-        url: 'https://i.imgur.com/PjSaIh7.png',
+        url: 'src/img/aj-classic.png',
         cor: '#f8a7f2',
         text: 'WhitePink',
-        imgs: ['https://i.imgur.com/PjSaIh7.png', 'https://i.imgur.com/PjSaIh7.png', 'https://i.imgur.com/PjSaIh7.png', 'https://i.imgur.com/PjSaIh7.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-06",
-        url: 'https://i.imgur.com/xbLZ4JR.png',
+        url: 'src/img/aj-classic.png',
         cor: '#ff009d',
         text: 'BlackPink',
-        imgs: ['https://i.imgur.com/xbLZ4JR.png', 'https://i.imgur.com/xbLZ4JR.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-07",
-        url: 'https://i.imgur.com/nCxMFB2.png',
+        url: 'src/img/aj-classic.png',
         cor: '#ffcad1',
         text: 'Rosé',
-        imgs: ['https://i.imgur.com/nCxMFB2.png', 'https://i.imgur.com/nCxMFB2.png', 'https://i.imgur.com/nCxMFB2.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-08",
-        url: 'https://i.imgur.com/6GVifei.png',
+        url: 'src/img/aj-classic.png',
         cor: '#2e005f',
         text: 'Purple',
-        imgs: ['https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png', 'https://i.imgur.com/6GVifei.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-09",
-        url: 'https://i.imgur.com/BjeszG6.png',
+        url: 'src/img/aj-classic.png',
         cor: '#06542a',
         text: 'DarkGreen',
-        imgs: ['https://i.imgur.com/BjeszG6.png', 'https://i.imgur.com/BjeszG6.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-10",
-        url: 'https://i.imgur.com/WBTmZju.png',
+        url: 'src/img/aj-classic.png',
         cor: '#b7ff00',
         text: 'LightGreen',
-        imgs: ['https://i.imgur.com/WBTmZju.png', 'https://i.imgur.com/WBTmZju.png', 'https://i.imgur.com/WBTmZju.png', 'https://i.imgur.com/WBTmZju.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-11",
-        url: 'https://i.imgur.com/dQxc3s2.png',
+        url: 'src/img/aj-classic.png',
         cor: '#00a6ff',
         text: 'RedBlue',
-        imgs: ['https://i.imgur.com/dQxc3s2.png', 'https://i.imgur.com/dQxc3s2.png', 'https://i.imgur.com/dQxc3s2.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
     {
         id: "000124-12",
-        url: 'https://i.imgur.com/L4CERYN.png',
+        url: 'src/img/aj-classic.png',
         cor: '#900000',
         text: 'BlackRed',
-        imgs: ['https://i.imgur.com/L4CERYN.png', 'https://i.imgur.com/L4CERYN.png', 'https://i.imgur.com/L4CERYN.png', 'https://i.imgur.com/L4CERYN.png', 'https://i.imgur.com/L4CERYN.png'],
+        imgs: ['src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png', 'src/img/aj-classic.png'],
     },
 ]
 
-export const tamMas =[
+export const tamMas = [
     {
         tipo: 'Masculino',
         text: '35',
@@ -138,7 +137,7 @@ export const tamMas =[
         valor: '30',
     },
 ]
- export const tamFem =[
+export const tamFem = [
     {
         tipo: 'Feminino',
         text: '33',
@@ -190,8 +189,3 @@ export const tamMas =[
         valor: '28.5',
     },	
 ]
-
-
-
-
-
